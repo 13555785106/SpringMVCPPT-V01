@@ -1,0 +1,19 @@
+1537364907869	Rename local variable 'sb'
+1537377283109	Copy elements
+1537377394914	Rename type 'ExtNameMime'
+1537377408555	Rename resource 'ExtNameMime.txt'
+1537377428607	Copy elements
+1537402968584	Rename type 'HTTPUtils'
+1537403078734	Rename type 'HTTPRequest'
+1537404284850	Rename type 'FileProgress'
+1537404313375	Rename method 'postProgress'
+1537404373104	Rename method 'progress'
+1537404857306	Rename type 'HttpProgress'
+1537404922597	Copy compilation unit
+1537412923809	Rename type 'SimpleHttpRequest'
+1537421349085	Rename local variable 'params'
+1537421370054	Rename local variable 'textFilds'
+1537421502633	Rename local variable 'files'
+1537422162224	Rename local variable 'params'
+1537453736059	Rename type 'SimpleHttp'
+1537453776461	Copy compilation units

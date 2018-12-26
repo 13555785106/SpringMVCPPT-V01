@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+	<comment />
+	<!-- This is a comment -->
+	<entry key="allStations">
+<![CDATA[
+SELECT * 
+FROM 
+stations
+ORDER BY name
+]]>
+	</entry>
+	<entry key="addStation">
+<![CDATA[
+INSERT INTO stations
+(name) VALUES(?)
+]]>
+	</entry>
+
+	<entry key="delStation">
+<![CDATA[
+DELETE FROM stations 
+WHERE name=?
+]]>
+	</entry>
+	
+</properties>

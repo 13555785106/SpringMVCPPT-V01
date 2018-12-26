@@ -1,0 +1,49 @@
+1536049914996	Rename type 'AddUser'
+1536050185420	Rename type 'AddUser2'
+1536154002338	Rename local variable 'dstType'
+1536160857534	Delete elements
+1536161420917	Rename local variable 'temp'
+1536223748116	Move compilation unit
+1536226002530	Move elements
+1536226008848	Delete element
+1536226399320	Rename resource 'Dac.xml'
+1536227503148	Rename method 'getQuery'
+1536231341070	Delete element
+1536231427550	Delete element
+1536233851026	Delete element
+1536233973962	Delete element
+1536236302757	Delete element
+1536243756605	Delete element
+1536326991115	Copy compilation unit
+1536334593971	Copy file
+1536368289402	Rename local variable 'key'
+1536368748126	Move 4 resources to 'html5ajax'
+1536369307215	Delete element
+1536371746678	Move 2 resources to 'updownload'
+1536375636203	Rename type 'UploadFileModel'
+1536377460574	Copy compilation unit
+1536377877861	Copy file
+1536378091389	Copy compilation unit
+1536378115098	Rename type 'ListUser'
+1536378293008	Copy file
+1536378305576	Rename resource 'ListUser-Result.jsp'
+1536378758101	Move 'ListUser-Result.jsp' to 'updownload'
+1536378763962	Move 'ListFile-Result.jsp' to 'ex02'
+1536378781274	Rename resource 'ListFile-Result.jsp'
+1536378790864	Rename resource 'ListUser-Result.jsp'
+1536379186637	Delete element
+1536380779740	Copy compilation unit
+1536381198130	Copy compilation unit
+1536406029031	Move file
+1536406230954	Delete element
+1536406869345	Move compilation unit
+1536407069339	Move 'TurningPage-Result.jsp' to 'ex02'
+1536408507185	Move compilation unit
+1536412081081	Copy file
+1536412114828	Rename resource 'pe.properties'
+1536413107754	Delete element
+1536413270760	Move compilation unit
+1536413316441	Move 'UTF8Parameter.jsp' to 'getutf8'
+1536415661992	Move compilation unit
+1536415681867	Delete element
+1536418807745	Rename resource 'Test.jsp'

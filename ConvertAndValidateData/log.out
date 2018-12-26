@@ -1,0 +1,23 @@
+Logging Provider: org.jboss.logging.Log4jLoggerProvider
+HV000001: Hibernate Validator 6.0.10.Final
+Found javax.persistence.Persistence on classpath containing 'getPersistenceUtil'. Assuming JPA 2 environment. Trying to instantiate JPA aware TraversableResolver
+Instantiated JPA aware TraversableResolver of type org.hibernate.validator.internal.engine.resolver.JPATraversableResolver.
+Trying to load META-INF/validation.xml for XML based Validator configuration.
+Trying to load META-INF/validation.xml via TCCL
+Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+No META-INF/validation.xml found. Using annotation based configuration only.
+Loaded expression factory via original TCCL
+HV000234: Using org.hibernate.validator.messageinterpolation.ResourceBundleMessageInterpolator as ValidatorFactory-scoped message interpolator.
+HV000234: Using org.hibernate.validator.internal.engine.resolver.JPATraversableResolver as ValidatorFactory-scoped traversable resolver.
+HV000234: Using org.hibernate.validator.internal.util.ExecutableParameterNameProvider as ValidatorFactory-scoped parameter name provider.
+HV000234: Using org.hibernate.validator.internal.engine.DefaultClockProvider as ValidatorFactory-scoped clock provider.
+HV000234: Using org.hibernate.validator.internal.engine.scripting.DefaultScriptEvaluatorFactory as ValidatorFactory-scoped script evaluator factory.
+Adding composing constraint: ConstraintDescriptorImpl{annotation=j.v.c.Min, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=METHOD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={groups=[Ljava.lang.Class;@470f1802, message={javax.validation.constraints.Min.message}, value=0, payload=[Ljava.lang.Class;@63021689}, constraintType=GENERIC, valueUnwrapping=DEFAULT}.
+Adding composing constraint: ConstraintDescriptorImpl{annotation=j.v.c.Max, payloads=[], hasComposingConstraints=true, isReportAsSingleInvalidConstraint=false, elementType=METHOD, definedOn=DEFINED_LOCALLY, groups=[interface javax.validation.groups.Default], attributes={groups=[Ljava.lang.Class;@703580bf, message={javax.validation.constraints.Max.message}, value=5, payload=[Ljava.lang.Class;@3e92efc3}, constraintType=GENERIC, valueUnwrapping=DEFAULT}.
+Class level annotation are getting ignored for com.sample.User.
+ValidationMessages not found.
+ContributorValidationMessages not found.
+org.hibernate.validator.ValidationMessages found.
+ValidationMessages not found.
+ContributorValidationMessages not found.
+org.hibernate.validator.ValidationMessages found.

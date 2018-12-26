@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	<!-- 使用Locale带一个参数的构造函数进行实例化 -->
+	<bean id="locale" class="java.util.Locale">
+		<constructor-arg name="language" value="cn" />
+	</bean>
+	<!-- 使用Calendar带一个参数的工厂方法进行实例化 -->
+	<bean id="calendar" class="java.util.Calendar" factory-method="getInstance">
+		<constructor-arg name="locale">
+			<ref bean="locale" />
+		</constructor-arg>
+	</bean>
+	<!-- 使用Address无参构造函数进行实例化，单独设置每个属性 -->
+	<bean id="address01" class="com.sample.Address">
+		<property name="province" value="province00001" />
+		<property name="city" value="city00001" />
+		<property name="street" value="street00001" />
+	</bean>
+	<!-- 使用Address三个参数的构造函数进行实例化 -->
+	<bean id="address02" class="com.sample.Address">
+		<constructor-arg name="province" value="province00002" />
+		<constructor-arg name="city" value="city00002" />
+		<constructor-arg name="street" value="street00002" />
+	</bean>
+	<!-- 此处user01依赖address01，address01被注入到user01中 -->
+	<bean id="user01" class="com.sample.User">
+		<property name="id" value="00001" />
+		<property name="account" value="00001" />
+		<property name="passwd" value="00001" />
+		<property name="address">
+			<ref bean="address01" />
+		</property>
+	</bean>
+	<bean id="user02" class="com.sample.User">
+		<constructor-arg name="id" value="00002" />
+		<constructor-arg name="account" value="00002" />
+		<constructor-arg name="passwd" value="00002" />
+		<property name="address">
+			<ref bean="address02" />
+		</property>
+	</bean>
+</beans>

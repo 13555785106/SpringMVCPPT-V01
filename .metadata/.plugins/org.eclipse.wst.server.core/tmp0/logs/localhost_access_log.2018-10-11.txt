@@ -1,0 +1,8 @@
+127.0.0.1 - - [11/Oct/2018:20:23:03 +0800] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1 - - [11/Oct/2018:20:23:04 +0800] "GET /WebSample/index.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2018:20:23:13 +0800] "GET /WebSample/index.html HTTP/1.1" 200 4266
+0:0:0:0:0:0:0:1 - - [11/Oct/2018:20:34:47 +0800] "GET /WebSample/index.html HTTP/1.1" 200 4266
+0:0:0:0:0:0:0:1 - - [11/Oct/2018:20:34:47 +0800] "GET /WebSample/theme/js/jquery.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2018:20:34:47 +0800] "GET /WebSample/theme/js/bootstrap.min.js HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2018:20:34:47 +0800] "GET /WebSample/theme/css/bootstrap.min.css HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [11/Oct/2018:20:34:47 +0800] "GET /WebSample/images/paint-brush-tool-icon.png HTTP/1.1" 304 -

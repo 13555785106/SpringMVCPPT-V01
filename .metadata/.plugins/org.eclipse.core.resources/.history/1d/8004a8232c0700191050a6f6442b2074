@@ -1,0 +1,56 @@
+package com.easyweb.utils;
+
+import java.io.UnsupportedEncodingException;
+
+/**
+ * 八进制编码转换工具
+ * 此类用来将UTF-8格式的字符串（包含中英文）与 八进制编码格式字符串（例：\344\270\255\345\233\275）进行互转。
+ */
+public final class CodecUtils {
+	
+	private CodecUtils() {
+	}
+
+	/**
+	 * 将UTF-8格式的字符串（包含中英文）转换成 八进制编码格式字符串（如：'\344\270\255\345\233\275'）。
+	 * 
+	 * @param value utf8格式字符串（如：'中国'）。
+	 * @return 返回八进制 编码格式的字符串（如：'\344\270\255\345\233\275'）。
+	 */
+	public static String encodeOct(String value) throws UnsupportedEncodingException {
+		byte[] bytes  = value.getBytes("UTF-8");
+		StringBuffer sb = new StringBuffer();
+		for(int i=0;i<bytes.length;i++) {
+			byte b = bytes[i];
+			String octStr = Integer.toOctalString(0xff&b);
+			sb.append("\\");
+			sb.append(octStr);
+		}
+		return sb.toString();
+	}
+	
+	/**
+	 * 将八进制编码格式字符串（如：'\344\270\255\345\233\275'）转换成 UTF-8格式的字符串（包含中英文）。
+	 * 
+	 * @param 八进制 编码格式的字符串（如：'\344\270\255\345\233\275'）。
+	 * @return 返回utf8String utf8格式字符串（如：'中国'）。
+	 */
+	public static String decodeOct(String octString) throws UnsupportedEncodingException {
+		String[] strs =octString.split("\\\\");
+		byte[] bytes = new byte[strs.length-1];
+		for(int i=1;i<strs.length;i++) {
+			bytes[i-1] = (byte)Integer.parseInt(strs[i], 8);
+		}
+		return new String(bytes,"UTF-8");
+	}
+	
+	public static void main(String[] args) throws UnsupportedEncodingException {
+		String str = "中国";
+		System.out.println(str);
+		str = encodeOct(str);
+		System.out.println(str);
+		String str2 = decodeOct(str);
+		System.out.println(str2);
+	}
+
+}
